@@ -33,4 +33,4 @@ PermitRootLogin prohibit-password
 - User-managed access -> On
 
 ## Login
-- Login with email -> Off
+- Login with email -> On
