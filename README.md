@@ -18,19 +18,25 @@ PermitRootLogin prohibit-password
 - Log out and log into `kcadmin`
 - Delete the `admin` user
 
-# Manage master realm
+# Master Realm
 
-## General
+## Realm Settings
+
+### General
 - User-managed access -> On
 
-## Login
+### Login
 - Login with email -> Off
 
-# Create new realm
+# Metropolis.nexus Realm
 - Manage realm -> Create realm -> `metropolis.nexus`
 
-## General
+## Realm Settings
+
+### General
 - User-managed access -> On
 
-## Login
+### Login
 - Login with email -> On
+
+## Identity Providers
