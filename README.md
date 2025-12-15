@@ -12,7 +12,7 @@ PermitRootLogin prohibit-password
 ## Create the Permanent Admin User
 
 - Create the `kcadmin` user
-  - Role mapping -> Assign role -> Real roles -> `role_admin`
+  - Role mapping -> Assign role -> Realm roles -> `role_admin`
 - Log out and log into `kcadmin`
 - Delete the `admin` user
 
