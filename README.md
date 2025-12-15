@@ -17,4 +17,4 @@ PermitRootLogin prohibit-password
 - Delete the `admin` user
 
 ## Create new realm
-- Manage realm -> Create realm -> `metropolis-nexus`
+- Manage realm -> Create realm -> `metropolis.nexus`
