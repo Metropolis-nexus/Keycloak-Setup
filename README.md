@@ -20,8 +20,17 @@ PermitRootLogin prohibit-password
 
 # Manage master realm
 
+## General
+- User-managed access -> On
+
 ## Login
 - Login with email -> Off
 
 # Create new realm
 - Manage realm -> Create realm -> `metropolis.nexus`
+
+## General
+- User-managed access -> On
+
+## Login
+- Login with email -> Off
