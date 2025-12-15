@@ -56,6 +56,7 @@ Add Keycloak Open ID connect
 - Backchannel logout -> On
 - Scope -> openid profile email
 - Prompt -> Consent
+- Access Token is JWT -> On
 - Trust Email -> On
 - Sync mode -> Force
 - Case-sensitive username -> On
