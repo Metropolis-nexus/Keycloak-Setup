@@ -40,6 +40,7 @@ PermitRootLogin prohibit-password
 - Login with email -> On
 
 ### User profile
+- email -> Required -> Off
 - firstName -> Required -> Off
 - lastName -> Required -> Off
 
