@@ -39,6 +39,10 @@ PermitRootLogin prohibit-password
 ### Login
 - Login with email -> On
 
+### User profile
+- firstName -> Required -> Off
+- lastName -> Required -> Off
+
 ## Identity Providers
 
 Add Keycloak Open ID connect
