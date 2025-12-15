@@ -14,7 +14,6 @@ PermitRootLogin prohibit-password
 - Create the `kcadmin` user
   - Role mapping -> Assign role ->
     - Realm roles -> `role_admin`
-    - Client roles -> `manage-account`
 - Log out and log into `kcadmin`
 - Delete the `admin` user
 
