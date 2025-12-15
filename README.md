@@ -58,5 +58,5 @@ Add Keycloak Open ID connect
 - Prompt -> Consent
 - Trust Email -> On
 - Sync mode -> Force
-- Case-sensitive username -> On (This doesn't actually work properly, but Keycloak will go into an infinite loop if it's not set)
+- Case-sensitive username -> On (This doesn't actually work properly)
 - Hit "Save" again
