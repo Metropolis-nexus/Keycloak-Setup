@@ -40,3 +40,18 @@ PermitRootLogin prohibit-password
 - Login with email -> On
 
 ## Identity Providers
+
+Add Keycloak Open ID connect
+
+- Alias -> Authentik
+- Discovery endpoint -> https://auth.metropolis.nexus/application/o/keycloak/.well-known/openid-configuration
+- Client assertion signature algorithm -> ES256
+- Hit "Save"
+- PKCE -> On
+- Backchannel logout -> On
+- Scope -> openid profile email
+- Prompt -> Consent
+- Trust Email -> On
+- Sync mode -> Force
+- Case-sensitive username -> On
+- Hit "Save" again
