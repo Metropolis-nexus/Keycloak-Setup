@@ -16,3 +16,5 @@ PermitRootLogin prohibit-password
 - Log out and log into `kcadmin`
 - Delete the `admin` user
 
+## Create new realm
+- Manage realm -> Create realm -> `metropolis-nexus`
