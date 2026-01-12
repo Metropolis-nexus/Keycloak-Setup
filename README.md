@@ -40,12 +40,19 @@ PermitRootLogin prohibit-password
 - Login with email -> On
 
 ### User profile
-- email -> Required -> Off
+- email -> Required -> On
 - firstName -> Required -> Off
 - lastName -> Required -> Off
 
-## Identity Providers
+## Authentication
+- Create Authentik flow (Note that we are not using the Identity Provider Redirector here because the implementation is broken and will make it impossible to log out)
+![Authentik flow](Authentik-Flow.png)
+- Bind Authentik flow as the browser flow
+- Create the Block Registration flow (otherwise registration can still be triggered under certain condition)
+![Block Registration flow](Block-Registration-Flow.png)
+- Bind Block Registration as the registration flow
 
+## Identity Providers
 Add Keycloak Open ID connect
 
 - Alias -> Authentik
@@ -59,6 +66,7 @@ Add Keycloak Open ID connect
 - Prompt -> Consent
 - Access Token is JWT -> On
 - Trust Email -> On
+- Show in Account console -> Never
 - Sync mode -> Force
 - Case-sensitive username -> On
 - Hit "Save" again
