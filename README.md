@@ -59,16 +59,9 @@ PermitRootLogin prohibit-password
 - Repeat the same for the Block Direct Grant flow
 
 ### Required actions
-- Configure OTP -> Off
-- Update profile -> Off
-- Update password -> Off
-- Verify email -> Off
-- WebAuthn Register -> Off
-- WebAuthn Passwordless Register -> Off
-- Verify profile -> Off
-- Delete Credential -> Off
-- Linking Authenticator -> Off
-- Recovery Authentication Code -> Off
+- Update User Locale -> On
+
+Keep the rest off
 
 ## Identity Providers
 Add Keycloak Open ID connect
@@ -79,8 +72,8 @@ Add Keycloak Open ID connect
 - Hit "Add"
 - PKCE -> On
 - PKCE Method -> S256
-- Backchannel logout -> On
-- Scope -> openid profile email keycloak
+- Backchannel logout -> Off
+- Scope -> openid profile email
 - Prompt -> Consent
 - Access Token is JWT -> On
 - Trust Email -> On
@@ -88,14 +81,3 @@ Add Keycloak Open ID connect
 - Sync mode -> Force
 - Case-sensitive username -> On
 - Hit "Save" again
-
-Go to Mapper
-- Add "admin"
-  - Name: admin
-  - Sync mode override: inherit
-  - Mapper type: Claim to Role
-  - Claim: role
-  - Claim Value: admin
-  - Role -> Realm role: admin
-- Add "user"
-  - Repeat the same as above, but for "user"
