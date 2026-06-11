@@ -72,7 +72,7 @@ Add Keycloak Open ID connect
 - Hit "Add"
 - PKCE -> On
 - PKCE Method -> S256
-- Backchannel logout -> Off
+- Backchannel logout -> On (Put https://keycloak.metropolis.nexus/realms/Metropolis.nexus/protocol/openid-connect/logout/backchannel-logout as the back channel logout in Authentik)
 - Scope -> openid profile email
 - Prompt -> Consent
 - Access Token is JWT -> On
