@@ -25,12 +25,6 @@ PermitRootLogin prohibit-password
 ### General
 - User-managed access -> On
 
-## Authentication
-
-### Required actions
-
-
-
 ### Login
 - Login with email -> Off
 
