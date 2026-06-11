@@ -25,6 +25,12 @@ PermitRootLogin prohibit-password
 ### General
 - User-managed access -> On
 
+## Authentication
+
+### Required actions
+
+
+
 ### Login
 - Login with email -> Off
 
@@ -48,7 +54,7 @@ PermitRootLogin prohibit-password
 ## Authentication
 
 ### Flows
-- Create Authentik flow (Note that we are not using the Identity Provider Redirector here because the implementation is broken and will make it impossible to log out)
+- Create Authentik flow
 ![Authentik flow](Authentik-Flow.png)
 - Bind Authentik flow as the browser flow
 - Create the Block Registration flow (otherwise registration can still be triggered under certain condition)
